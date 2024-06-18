@@ -1,0 +1,80 @@
+body {
+    background: url('Pga.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex; /* Cambiamos el display a flex para que los elementos se distribuyan correctamente */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Agregamos padding izquierdo y derecho para separar los elementos del borde */
+}
+
+header nav ul li {
+    /* float: left; Ya no necesitamos float con flexbox */
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+header nav ul img {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: 40px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%; /* Para hacer que la imagen sea redondeada */
+    margin-top: 10px; /* Ajuste de margen superior para alinear con la barra de navegación */
+    margin-right: 10px; /* Ajuste de margen derecho para alinear con la esquina superior derecha */
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 25px;
+    text-align: center;
+    color: black;
+}
+
+
+
+/* Nuevos estilos para los div laterales */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: rgba(255, 182, 193, 0.5); /* Fondo rosado transparente */
+    width: 400%; /* Ancho de las barras laterales */
+    height: flex; /* Altura completa de la ventana */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

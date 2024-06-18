@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Astronauta</title>
+    <link rel="stylesheet" href="JuegoM.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Extrap.html">Presentación</a></li>
+                <li><a href="Login.html">Iniciar Sesión</a></li>
+                <li><a href="Carruselp.html">Galería</a></li>
+                <li><a href="Horariosp.html">Plan de estudios</a></li>
+                <img src="logo1.png" alt="Imagen 1">
+                <a href="https://www.facebook.com/cecyteuruapan20?__tn__=-UC"><img src="logoc.jpg" alt="Imagen que lleva a JuegoM.html"></a>
+                <img src="logoP.jpg" alt="Imagen 1">
+            </ul>
+        </nav>
+    </header>
+    <canvas id="gameCanvas"></canvas>
+    <img id="astronaut" src="astronaut.png" alt="Astronauta" class="hidden">
+    <img id="object" src="asteroide.png" alt="objeto" class="hidden">
+    <div id="lives">Vidas: 20</div>
+    <div id="level">Nivel: 1</div>
+    <div id="gameOverMessage" class="hidden">
+        <p>Has muerto</p>
+        <button id="retryButton">Volver a jugar</button>
+    </div>
+    <div id="introMessage">
+        <p>Eres un astronauta que trabajaba para la NASA. Pero en tu última misión tu nave se vio obligada a cruzar por el cinturón de asteroides. La nave fue golpeada por un asteroide y quedaste varado en el espacio. Te queda poco tiempo. Solo puedes tratar de sobrevivir y tener fe en que vendrán a rescatarte.</p>
+    </div>
+    <div id="countdownMessage" class="hidden">
+        <p id="countdown"></p>
+    </div>
+    <div id="leftButton" class="control-button">◀</div>
+    <div id="rightButton" class="control-button">▶</div>
+    <div id="upButton" class="control-button">▲</div>
+    <div id="downButton" class="control-button">▼</div>
+    <button id="pauseButton" class="pause-button">ll</button>
+    <button id="resumeButton" class="resume-button">></button>
+    <audio id="endMusic" src="end_music.mp3" loop></audio>
+    <script src="JuegoM.js"></script>
+</body>
+</html>
